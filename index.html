@@ -1,0 +1,61 @@
+<head>
+    <title>Cactulator</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+</head>
+<body onload="onLoad()">
+    <div class="divTable unstyledTable">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    <input id="cell00" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+                <div class="divTableCell">
+                    <input id="cell01" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+                <div class="divTableCell">
+                    <input id="cell02" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    <input id="cell10" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+                <div class="divTableCell">
+                    <input id="cell11" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+                <div class="divTableCell">
+                    <input id="cell12" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    <input id="cell20" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+                <div class="divTableCell">
+                    <input id="cell21" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+                <div class="divTableCell">
+                    <input id="cell22" class="small-input" maxlength="1" pattern="[1-9]"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 1em">
+        <button onclick="analyze()">Calculate</button>
+    </div>
+    <div>
+        <label>Status: </label>
+        <label id="status">OK</label>
+    </div>
+    <div class="container">
+        <div class="left-element">
+            <div>
+                <textarea readonly id="results" style="min-height: 20em; min-width: 48em;">OUTPUT</textarea>
+            </div>
+        </div>
+        <div class="right-element">
+            <img src="Selection.png"/>
+        </div>
+    </div>
+</body>
