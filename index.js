@@ -10,6 +10,16 @@ function onLoad() {
     }
 }
 
+function clear() {
+    avaiableNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    
+    for (var x = 0; x < 3; x++) {
+        for (var y = 0; y < 3; y++) {
+            document.getElementById("cell" + x + y).value = "";
+        }
+    }
+}
+
 function updateAvaiableNumbers() {
     avaiableNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
