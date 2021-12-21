@@ -10,7 +10,7 @@ function onLoad() {
     }
 }
 
-function clear() {
+function clearField() {
     avaiableNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     
     for (var x = 0; x < 3; x++) {
